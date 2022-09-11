@@ -1,0 +1,59 @@
+\documentclass[10pt,UTF8,landscape]{article}
+\usepackage{ctex}
+\usepackage[ngerman]{babel}
+\usepackage{selinput}
+\usepackage[]{amsmath}
+\usepackage{geometry}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{colortbl,booktabs}
+
+\usepackage{caption}
+
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+}
+\usepackage{url}
+
+\usepackage{listings}
+\lstset{
+    columns=fixed,
+    numbers=left,                                        % 在左侧显示行号
+    numberstyle=\tiny\color{gray},                       % 设定行号格式
+    frame=single,                                          % 不显示背景边框
+    backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
+    keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
+    numberstyle=\footnotesize\color{darkgray},
+    commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+    showstringspaces=false,                              % 不显示字符串中的空格
+    language=Matlab,                                     % 设置语言
+    breaklines=true,                % sets automatic line breaking
+}
+
+\newcommand*{\dif}{\mathop{}\!\mathrm{d}}
+\newcommand*{\detmat}{\mathop{}\!\mathrm{det}}
+\def\celsius{\ensuremath{^\circ\hspace{-0.09em}\mathrm{C}}}
+
+\usepackage{appendix}
+
+
+\bibliographystyle{unsrt}
+\usepackage{xpatch}
+%\xpatchcmd{\thebibliography}{\section*}{\part}{}{}
+
+\geometry{a4paper,scale=0.9}
+\setlength{\parindent}{0pt}
+
+\newcommand{\myparagraph}[1]{\paragraph{#1}\null{}\hfill\newline}
+
+\usepackage{graphicx, subfig}
+\usepackage{longtable}
+\usepackage{color}
